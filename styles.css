@@ -1,42 +1,44 @@
-/* Style the navigation bar */
-.navbar {
-  width: 100%;
-  background-color: #555;
-  overflow: auto;
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: dodgerblue; 
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
 }
 
-/* Navbar links */
-.navbar a {
-  float: left;
-  text-align: center;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
 }
 
-/* Navbar links on mouse-over */
-.navbar a:hover {
-  background-color: #3973ac;
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 20px;
+  background-color:white;
 }
 
-/* Current/active navbar link */
-.active {
-  background-color: #3973ac;
+#blog {
+  top: 80px;
+  background-color: white; 
 }
 
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
+#projects {
+  top: 140px;
+  background-color: white; 
+}
+
+#contact {
+  top: 200px;
+  background-color: white;
 }
 h1{
-  font-size: 65px;
+  font-size: 95px;
   text-align: center;
   text-decoration: overline;
-  color: #3973ac;
+  color:dodgerblue;
 }
 body {
   background-color: blanchedalmond; 
